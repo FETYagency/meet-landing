@@ -1,0 +1,27 @@
+:root{
+    --root-fs: 15px;
+    font-size: var(--root-fs);
+    
+
+    --FS-h1: 4.3rem;
+    --FS-h2: 2.7rem;
+    --FS-overline:  1.1rem;
+    --FS-body: 1.4rem;
+
+    --LH-body-overline: 2rem;
+    --LH-h2: 2.9rem;
+    --LH-h1: 4.3rem;
+
+    --SPACING: 4px;
+    --CAPS: uppercase;
+
+
+    --CLR-HS-BlueGreen:hsl(192, 37%, 48%);
+    --CLR-HS-cyan:hsl(192, 90%, 77%);
+    --CLR-HS-purpul:hsl(268, 34%, 53%);
+    --CLR-HS-pinkyPurpul:hsl(268, 100%, 86%);
+    --CLR-HS-darkBlue:hsl(240, 21%, 20%);
+    --CLR-HS-grey:hsl(240, 10%, 57%);
+    --CLR-HS-white:hsl(0, 0%, 98%);
+
+}
