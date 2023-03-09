@@ -17,8 +17,8 @@ main{
     display: flex;
     flex-flow: column;
     align-items: center;
-    overflow-inline: hidden;
-    overflow-block: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: clamp(min(46.66rem, 100%), 100%, 106.66rem);
     min-height: 100vh;
 }
@@ -57,16 +57,27 @@ main{
 a[class*="__btn"]{
     display: inline-block;
     transition: all .3s ease;
-    width: fit-content;
+    text-align: center;
+
+/* fit-content value's not supported in some diffrent browser's versions  */
+
+
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content; 
+
+
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 a[class^= Dload__btn]{
     color: white;
     background-color: var(--CLR-HS-BlueGreen);
-    padding-inline: 2.4rem;
     border-radius: 2.5rem;
+    width: 12rem;
     padding-block:2rem;
     text-decoration: none;
 }
@@ -74,7 +85,6 @@ a[class^= Dload__btn]::after{
     content: "  v1.3";
     color: var(--CLR-HS-cyan);
     font-weight: 700;
-    font-size: 1.3rem;
 }
 
 
@@ -235,7 +245,7 @@ footer{
     gap: 3rem;
     flex-flow: column;
     padding-block: 7rem;
-    padding-inline:4rem;
+    padding-inline:1rem;
 
 }
 
@@ -350,7 +360,7 @@ footer .article__header__L, footer .article__body{
         flex-flow: row;
         align-items: center;
         text-align: start;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         
     }
     footer>.article__body{
